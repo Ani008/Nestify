@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/lightGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <!-- Property Image -->
+        <ImageView
+            android:id="@+id/imgProperty"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bhk_1"
+            android:background="@drawable/rounded_corner"
+            android:elevation="5dp"/>
+
+        <!-- Card for Property Details -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/rounded_white_bg">
+
+                <TextView
+                    android:id="@+id/txtPropertyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luxury Apartment"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/txtPropertyLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mumbai, India"
+                    android:textSize="18sp"
+                    android:textColor="@color/darkGray"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/txtPropertyArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="500 sqft"
+                    android:textSize="18sp"
+                    android:textColor="@color/darkGray"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/txtPropertyPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₹50,00,000"
+                    android:textSize="18sp"
+                    android:textColor="@color/primaryColor"
+                    android:textStyle="bold"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/txtPropertySquareFeet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="500 Sq. Ft."
+                    android:textSize="18sp"
+                    android:textColor="@color/darkGray"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/txtPropertyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 BHK"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Save"
+
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/black"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_button"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnInterested"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Interested"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

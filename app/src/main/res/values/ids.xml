@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="recyclerViewProperties" type="id"/>
+    <item type="id" name="recyclerViewProperties" />
+    <item type="id" name="gridLayoutImages" />
+    <item type="id" name="img2" />
+    <item type="id" name="linearLayoutContainer" />
+    <item type="id" name="txtLocation1" />
+    <item type="id" name="txtPrice1" />
+    <item type="id" name="imgProperty2" />
+    <item type="id" name="txtPropertyName2" />
+    <item type="id" name="txtLocation2" />
+    <item type="id" name="txtPrice2" />
 </resources>
